@@ -1,4 +1,4 @@
-import application
+from simpletor import application
 import sae
 
 app = application.Application()
