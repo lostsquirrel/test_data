@@ -28,6 +28,7 @@ class RequestHandler(tornado.web.RequestHandler):
     
     def initialize(self):
         self.errors = dict()
+        self.add_header('Access-Control-Allow-Origin', '*')
     
     def set_current_user(self, user):
         user = json.dumps(user)
